@@ -36973,7 +36973,7 @@
                 ? "<h4>我的微信</h4><span>wei15038615381</span>"
                 : "<h4>Oops. An error occurred.</h4><span>Please try again.</span>"),
             (this.domElements.resultButton.innerHTML =
-              2 == t ? "Cool!" : "Try again"),
+              2 == t ? "OK!" : "Try again"),
             2 == t ? this.showSuccessIcon() : this.showErrorIcon();
         }
         addResultButtonEventListener() {
