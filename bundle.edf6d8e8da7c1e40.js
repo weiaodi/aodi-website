@@ -36970,7 +36970,7 @@
           this.showContainer("result"),
             (this.domElements.resultMessage.innerHTML =
               2 == t
-                ? "<h4>Your message has been sent.</h4><span>I'll get back to you as soon as possible.</span>"
+                ? "<h4>我的微信</h4><span>wei15038615381</span>"
                 : "<h4>Oops. An error occurred.</h4><span>Please try again.</span>"),
             (this.domElements.resultButton.innerHTML =
               2 == t ? "Cool!" : "Try again"),
