@@ -46,6 +46,16 @@
       name="msapplication-square70x70logo"
       content="assets/images/ba0447ccdd83c421.png"
     />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="browsermode" content="application" />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="360-fullscreen" content="true" />
     <meta
       name="msapplication-square150x150logo"
       content="assets/images/90a697137e15c24c.png"
@@ -54,6 +64,7 @@
       name="msapplication-wide310x150logo"
       content="assets/images/728bca25a951a9fe.png"
     />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
     <meta
       name="msapplication-square310x310logo"
       content="assets/images/1b1fa926335e5a16.png"
@@ -65,7 +76,9 @@
     <script defer="defer" src="bundle.edf6d8e8da7c1e40.js"></script>
     <link href="main.css" rel="stylesheet" />
   </head>
-  <body>
+  <body
+    onLoad="javascript:window.resizeTo(screen.availWidth,screen.availHeight);window.moveTo(0,0) "
+  >
     <canvas id="main-canvas"></canvas>
     <div id="intro-container" class="center column">
       <svg
@@ -806,15 +819,9 @@
   </body>
 </html>
 <script>
-  window.οnlοad = function () {
-    if (
-      document.documentElement.scrollHeight <=
-      document.documentElement.clientHeight
-    ) {
-      bodyTag = document.getElementsByTagName("body")[0];
-      bodyTag.style.height =
-        (document.documentElement.clientWidth / screen.width) * screen.height +
-        "px";
-    }
+  window.onload = function () {
+    setTimeout(function () {
+      window.scrollTo(0, 1);
+    }, 0);
   };
 </script>
