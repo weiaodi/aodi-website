@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="favicon.ico" type ="images/dino.ico">
-    <title>奥迪 | 创造性的摸鱼佬 </title>
+    <title>奥迪 | 创造性的摸鱼佬</title>
+    <link rel="icon" href="favicon.ico" type="images/dino.ico" />
     <link
       rel="mask-icon"
       href="assets/images/71931bd71674add5.svg"
@@ -200,7 +200,7 @@
           </div>
         </div>
         <div id="menu-social-container" class="row">
-         <a tabindex="-1" target="_blank" href="https://github.com/weiaodi"
+          <a tabindex="-1" target="_blank" href="https://github.com/weiaodi"
             ><img
               class="social-icon"
               alt="Github Menu Icon"
@@ -252,16 +252,17 @@
           <text class="landing-headline" y="60" x="5">你好, 老板</text>
           <text class="landing-headline" y="135" x="5">你可以叫我奥迪.</text>
           <text class="landing-subheading" x="10" y="185">
-          A well-done, efficient lazy programer
+            A well-done, efficient lazy programer
           </text>
           <foreignObject
-            x="8"hr
+            x="8"
+            hr
             y="250"
             height="100"
             width="300"
             requiredExtensions="http://www.w3.org/1999/xhtml"
             ><div id="landing-cta-button" class="big-button orange-hover">
-             获取更多
+              获取更多
             </div></foreignObject
           >
         </svg>
@@ -589,13 +590,11 @@
                 <text x="88" y="33" class="about-text">
                   在面对各种奇奇怪怪的bug和需求时,
                 </text>
-                 <text x="88" y="50" class="about-text">
-               
+                <text x="88" y="50" class="about-text">
                   培养了良好的心态和高效的沟通能力,
                 </text>
                 <text x="88" y="67" class="about-text">
-               
-                 相比较于业务的熟练度,我认为上述能力更为重要.
+                  相比较于业务的熟练度,我认为上述能力更为重要.
                 </text>
               </g>
             </g>
@@ -647,7 +646,7 @@
               <hr />
               <h5>Portfolio</h5>
             </div>
-            <h1 class="section-header-container">我的一些 </h1>
+            <h1 class="section-header-container">我的一些</h1>
             <h1 class="section-header-container">作品展示</h1>
           </div>
           <svg
@@ -715,9 +714,7 @@
             <div id="contact-email-input" class="input-container column">
               <div class="row">
                 <label for="contact-email-input-field">邮件 :</label>
-                <span class="error-label hide"
-                  >请填写您的邮件信息.</span
-                >
+                <span class="error-label hide">请填写您的邮件信息.</span>
               </div>
               <input
                 id="contact-email-input-field"
@@ -736,10 +733,7 @@
               ></textarea>
             </div>
             <div class="row" id="contact-button-container">
-              <a
-                tabindex="-1"
-                target="_blank"
-                href="https://github.com/weiaodi"
+              <a tabindex="-1" target="_blank" href="https://github.com/weiaodi"
                 ><img
                   class="social-icon"
                   alt="github contact social icon small 28x28"
@@ -806,10 +800,21 @@
       </section>
       <footer class="row center">
         <span>&copy; 仅供个人展示参考,严谨商业用途</span>
-        <div id="legal-container" class="row">
-   
-        </div>
+        <div id="legal-container" class="row"></div>
       </footer>
     </div>
   </body>
 </html>
+<script>
+  window.οnlοad = function () {
+    if (
+      document.documentElement.scrollHeight <=
+      document.documentElement.clientHeight
+    ) {
+      bodyTag = document.getElementsByTagName("body")[0];
+      bodyTag.style.height =
+        (document.documentElement.clientWidth / screen.width) * screen.height +
+        "px";
+    }
+  };
+</script>
